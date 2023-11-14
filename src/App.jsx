@@ -13,8 +13,6 @@ library.add(fab, faCheckSquare, faCoffee)
 function App() {
     return (
         <div className="App">
-            <FontAwesomeIcon icon="check-square" />
-            Your <FontAwesomeIcon icon="coffee" /> is hot and ready!
             <Header />
             <MainContent />
             <Footer />
