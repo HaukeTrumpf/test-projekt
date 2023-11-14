@@ -11,7 +11,7 @@ const Navbar = ({ isMenuOpen, toggleMenu }) => {
     }
 
     return (
-        <nav className="text-white p-4">
+        <nav className="text-white p-4 ">
             <div className="container mx-auto flex justify-between items-center">
                 <a href="#" className="text-xl">
                     Logo
@@ -29,7 +29,7 @@ const Navbar = ({ isMenuOpen, toggleMenu }) => {
                 </div>
 
                 <button
-                    className="flex flex-col h-12 w-12 rounded justify-center items-center group"
+                    className="flex flex-col h-12 w-12 rounded justify-center items-center group md:hidden"
                     onClick={handleToggle}
                 >
                     <div
