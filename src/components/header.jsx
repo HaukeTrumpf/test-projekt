@@ -15,7 +15,7 @@ const Header = () => {
                 <div class="m-auto">
                     <InView className="fade-in-left">
                         <div className="container mx-auto">
-                            <h1 className="text-9xl text-white font-extrabold justify-center items-center">
+                            <h1 className="text-9xl text-white font-futuraBold justify-center items-center flex gap-16">
                                 Moin!
                                 <span class="wave">👋</span>
                             </h1>

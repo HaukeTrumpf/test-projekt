@@ -4,7 +4,7 @@ const MainContent = () => {
     return (
         <main className="container mx-auto p-4 flex h-screen">
             <div class="m-auto">
-                <div className="grid md:grid-cols-3 gap-4">
+                <div className="grid md:grid-cols-3 gap-16">
                     <InView className="fade-in-left">
                         <div class="max-w-sm rounded overflow-hidden shadow-lg animate-fade-left">
                             <div class="px-6 py-4">

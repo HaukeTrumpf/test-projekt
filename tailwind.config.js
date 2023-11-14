@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        lato: ["Lato", "sans-serif"], // Lato als Standard-Schriftart einstellen
+        lato: ["Lato", "sans-serif"],
+        futuraBold: ['"Futura Bold"', "sans-serif"],
       },
     },
   },
