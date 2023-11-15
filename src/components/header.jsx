@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Navbar from './navbar'
 import InView from '../util/inView'
+import Navbar from './navbar'
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -12,12 +12,14 @@ const Header = () => {
                     isMenuOpen={isMenuOpen}
                     toggleMenu={() => setIsMenuOpen(!isMenuOpen)}
                 />
-                <div class="m-auto">
+
+                <div className="m-auto">
                     <InView className="fade-in-left">
                         <div className="container mx-auto">
+                            <img src='../assets/images/me.png'></img>
                             <h1 className="text-8xl md:text-9xl text-white font-futuraBold justify-center items-center flex flex-wrap gap-16">
                                 Moin!
-                                <span class="wave">👋</span>
+                                <span className="wave">👋</span>
                             </h1>
                         </div>
                     </InView>
