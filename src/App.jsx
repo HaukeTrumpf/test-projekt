@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from './components/footer'
 import Header from './components/header'
 import MainContent from './components/mainContent'
 import Wdyd from './components/wdyd'
@@ -18,7 +17,6 @@ function App() {
                 </ParallaxLayer>
                 <ParallaxLayer sticky={{ start: 2, end: 3 }}>
                 <Wdyd/>
-                <Footer />
                 </ParallaxLayer>
                 
             </Parallax>
