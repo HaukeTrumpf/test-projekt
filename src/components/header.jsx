@@ -1,12 +1,10 @@
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import React, { useState } from 'react';
 import InView from '../util/inView';
 import Navbar from './navbar';
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
-        <Parallax pages={4} >
-        <ParallaxLayer speed={0.1} sticky={{ start: 0, end: 0 }}>
+        <>
             <header className="bg-cover bg-center h-screen bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 flex flex-col">
                 <Navbar
                     isMenuOpen={isMenuOpen}
@@ -23,9 +21,7 @@ const Header = () => {
                     </InView>
                 </div>
             </header>
-            </ParallaxLayer> 
-                
-                </Parallax>
+        </>
     )
 }
 
