@@ -5,7 +5,7 @@ const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease
 const Navbar = ({ isMenuOpen, toggleMenu }) => {
     const [isOpen, setIsOpen] = useState(false)
 
-    const handleToggle = () => {
+    const handleToggle = () => { 
         setIsOpen(!isOpen)
         toggleMenu()
     }
@@ -14,7 +14,7 @@ const Navbar = ({ isMenuOpen, toggleMenu }) => {
         <nav className="text-white p-4 ">
             <div className="container mx-auto flex justify-between items-center">
                 <a href="#" className="text-xl">
-                    Logo
+                    <img className='h-10' src='./dummy.png'/>
                 </a>
                 <div className="hidden md:flex space-x-4">
                     <a href="#" className="hover:text-gray-300">
