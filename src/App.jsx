@@ -8,7 +8,7 @@ import Contact from './components/contactForm'
 function App() {
     return (
         <div className="App"> 
-            <Parallax pages={4} >
+            <Parallax pages={3} >
                  <ParallaxLayer speed={0.1} sticky={{ start: 0, end: 0 }}>
                 <Header /> 
                 </ParallaxLayer>
