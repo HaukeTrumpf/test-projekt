@@ -6,8 +6,8 @@ const Header = () => {
     return (
         <>
             <header className="bg-cover bg-center h-screen bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 flex flex-col">
-                <Navbar
-                    isMenuOpen={isMenuOpen}
+                <Navbar className='z-10'
+                    isMenuOpen={isMenuOpen} 
                     toggleMenu={() => setIsMenuOpen(!isMenuOpen)}
                 />
                 <div className="m-auto">

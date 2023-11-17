@@ -1,9 +1,9 @@
 import React from 'react'
 import Header from './components/header'
 import MainContent from './components/mainContent'
-import Wdyd from './components/wdyd'
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import Contact from './components/contactForm'
 
 function App() {
     return (
@@ -16,7 +16,7 @@ function App() {
                 <MainContent />
                 </ParallaxLayer>
                 <ParallaxLayer sticky={{ start: 2, end: 3 }}>
-                <Wdyd/>
+                <Contact/>
                 </ParallaxLayer>
                 
             </Parallax>
