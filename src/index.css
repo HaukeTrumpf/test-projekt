@@ -1,29 +1,23 @@
+@import './assets/css/satoshi';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities; 
 
+
 body {
-  font-family: 'Lato', sans-serif;
-  overflow-x: hidden;
+  font-family: 'Satoshi-BlackItalic'; 
+  overflow-x: hidden; 
 }
 
-@font-face {
-  font-family: 'Futura Bold';
-  src: url('./assets/fonts/futura_bold.otf') format('opentype');
-  font-weight: bold;
-  font-style: normal;
+h1 {
+   font-family: CabinetGrotesk-Black;
 }
-svg {
-  fill: currentColor;
-  height: auto;
-  max-width: 66vmin;
-  transform-origin: center;
-  width: 66%;
-  animation-name: spin;
-  animation-duration: 10000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+span{
+  font-family: 'Satoshi-Bold';
+  font-size: 20px;
 }
+
 
 @keyframes spin {
     from {
@@ -33,6 +27,13 @@ svg {
         transform:rotate(360deg);
     }
 }
+
+img.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+} 
 
 .fade-in-left {
   opacity: 0;
@@ -50,21 +51,4 @@ svg {
   transform: translateX(0);
 }
 
-.wave {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
-  display: inline-block;
-}
 
-@keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
-}

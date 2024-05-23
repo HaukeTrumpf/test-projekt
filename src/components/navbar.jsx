@@ -13,18 +13,13 @@ const Navbar = ({ isMenuOpen, toggleMenu }) => {
     return (
         <nav className="text-white p-4 z-10">
             <div className="container mx-auto flex justify-between items-center">
-                <a href="#" className="text-xl">
-                    <img className='h-10' src='./dummy.png'/>
-                </a>
+    
                 <div className="hidden md:flex space-x-4">
                     <a href="#" className="hover:text-gray-300">
-                        Home
+                        Was kann der
                     </a>
                     <a href="#" className="hover:text-gray-300">
-                        Über uns
-                    </a>
-                    <a href="#" className="hover:text-gray-300">
-                        Kontakt
+                        Schreib mir
                     </a>
                 </div>
 

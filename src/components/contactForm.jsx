@@ -48,7 +48,7 @@ function ContactForm() {
 
 function Contact() {
   return (
-    <div className='bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 flex justify-center items-center h-screen'>
+    <div className='bg-[#A1BE95] flex justify-center items-center h-screen'>
       <ContactForm /> 
     </div>
   );
