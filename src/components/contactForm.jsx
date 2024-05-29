@@ -4,10 +4,10 @@ import React from 'react';
 function ContactForm() {
   const [state, handleSubmit] = useForm("xnqkybgn");
   if (state.succeeded) {
-      return <p className="text-lg text-green-600">Thanks for joining!</p>;
+      return <h1 className="text-6xl md:text-9xl mb-10 tracking-widest flex flex-wrap ">Dankö</h1>;
   }
   return (
-    <form className="w-full max-w-lg bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
+    <form id='contact' className="w-full max-w-lg bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
       <div className="mb-4">
         <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
           Email Address
@@ -48,7 +48,7 @@ function ContactForm() {
 
 function Contact() {
   return (
-    <div className='bg-[#A1BE95] flex justify-center items-center h-screen'>
+    <div className='bg-[#2568fb] flex justify-center items-center h-screen'>
       <ContactForm /> 
     </div>
   );

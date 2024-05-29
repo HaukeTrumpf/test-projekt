@@ -1,7 +1,7 @@
 import React from 'react'
 const Wdyd = () => {
     return (
-        <div className='bg-cover bg-center h-screen bg-[#A1BE95] flex flex-col'>
+        <div className='bg-cover bg-center h-screen bg-[#2568fb] flex flex-col'>
         <svg viewBox="0 0 100 100" width="100" height="100">
   <defs>
     <path id="circle"

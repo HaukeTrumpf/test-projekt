@@ -1,27 +1,21 @@
 import React from 'react'
 import Header from './components/header'
-import MainContent from './components/mainContent'
-
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import { motion, useScroll } from "framer-motion"
 import Contact from './components/contactForm'
 
 function App() {
+    const { scrollYProgress } = useScroll();
     return (
-        <div className="App"> 
-            <Parallax pages={3} >
-                 <ParallaxLayer speed={0.1} sticky={{ start: 0, end: 0 }}>
+        <>
+        <motion.div
+            className="progress-bar"
+            style={{ scaleX: scrollYProgress }}
+        /> 
+        <div className="App">  
                 <Header /> 
-                </ParallaxLayer>
-                <ParallaxLayer speed={1} sticky={{ start: 1, end: 2 }}>
-                <MainContent />
-                </ParallaxLayer>
-                <ParallaxLayer sticky={{ start: 2, end: 3 }}>
-                <Contact/>
-                </ParallaxLayer>
-                
-            </Parallax>
- 
+                <Contact/>      
         </div>
+        </>
     )
 }
 

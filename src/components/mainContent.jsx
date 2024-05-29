@@ -2,7 +2,7 @@ import React from 'react'
 import InView from '../util/inView'
 const MainContent = () => {
     return (
-        <main className=" p-4 flex h-screen bg-white">
+        <main className=" p-4 flex h-screen bg-transparent">
             <div className="m-auto container ">
                 <div className="flex gap-16 justify-between flex-wrap">
                     <InView className="fade-in-left">
