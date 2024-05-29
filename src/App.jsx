@@ -8,8 +8,8 @@ function App() {
     return (
         <>
         <motion.div
-            className="progress-bar"
-            style={{ scaleX: scrollYProgress }}
+                className="progress-bar"
+                style={{ scaleX: scrollYProgress }}
         /> 
         <div className="App">  
                 <Header /> 
