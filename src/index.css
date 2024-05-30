@@ -37,9 +37,11 @@ span {
   font-size: 20px;
 }
 
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.borderback{
+  border-width: 53px;
+  border-style: solid;
+  border-image: linear-gradient( to top, #2568fb, rgba(0, 0, 0, 0) ) 1 10;
+  transition: border 5000ms ease;
 }
 
 img.rounded {
@@ -51,7 +53,8 @@ img.rounded {
 
 .fade-in-left, .fade-in-right {
   opacity: 0;
-  transition: opacity 1s ease-in, transform 1s ease-in;
+
+  transition: opacity .7s ease-in, transform .7s ease-in;
 }
 
 .fade-in-left { transform: translateX(-100px); }
@@ -60,6 +63,7 @@ img.rounded {
 .fade-in-left.in-view, .fade-in-right.in-view {
   opacity: 1;
   transform: translateX(0);
+  
 }
 
 .progress-bar {

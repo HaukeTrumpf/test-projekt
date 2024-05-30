@@ -5,7 +5,7 @@ import InView from '../util/inView';
 const Header = () => {
 
     return (
-    <InView className="flex flex-col justify-between items-center h-[100svh] p-5 md:p-20 fade-in-left">
+    <InView className="borderback flex flex-col justify-between items-center h-[100svh] p-5 md:p-20 fade-in-left">
         <div className="flex flex-col items-center justify-center h-screen">
                 <div className="text-[#2568fb] flex flex-col items-center">
                     <h1 className="text-6xl md:text-9xl mb-10 tracking-widest">
