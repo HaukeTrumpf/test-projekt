@@ -26,7 +26,7 @@ const Header = () => {
             </div>
         </div>
         <span className='text-[#2568fb] mt-4'>
-                <a className='link' href="lebenslauf_hauke_trumpf.pdf" download="cv_haukeTrumpf">Download CV</a>
+        <a className='link' href="https://raw.githubusercontent.com/HaukeTrumpf/test-projekt/main/lebenslauf_hauke_trumpf.pdf" download="cv_haukeTrumpf">Download CV</a>
         </span>
     </InView>
     )
