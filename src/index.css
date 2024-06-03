@@ -11,6 +11,7 @@ body {
 }
 
 button {
+  font-family: 'Satoshi-BlackItalic'; 
   border: 2px solid;
   padding: 15px;
   color: #2568fb;
@@ -37,12 +38,34 @@ span {
   font-size: 20px;
 }
 
-.borderback{
-  border-width: 53px;
+.borderback {
+  border-width: 53px; /* Default border for large screens */
   border-style: solid;
-  border-image: linear-gradient( to top, #2568fb, rgba(0, 0, 0, 0) ) 1 10;
+  border-image: linear-gradient(to top, #2568fb, rgba(0, 0, 0, 0)) 1 10;
   transition: border 5000ms ease;
 }
+
+/* Medium screens (tablets, small desktops) */
+@media (max-width: 1024px) {
+  .borderback {
+    border-width: 40px; /* Smaller border for medium screens */
+  }
+}
+
+/* Small screens (large phones) */
+@media (max-width: 768px) {
+  .borderback {
+    border-width: 30px; /* Even smaller border for small screens */
+  }
+}
+
+/* Extra small screens (small phones) */
+@media (max-width: 480px) {
+  .borderback {
+    border-width: 20px; /* Smallest border for extra small screens */
+  }
+}
+
 
 img.rounded {
   object-fit: cover;

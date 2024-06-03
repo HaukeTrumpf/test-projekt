@@ -9,7 +9,7 @@ const Header = () => {
         <div className="flex flex-col items-center justify-center h-screen">
                 <div className="text-[#2568fb] flex flex-col items-center">
                     <h1 className="text-6xl md:text-9xl mb-10 tracking-widest">
-                        Hi,<span className='text-[#fecd45] text-6xl md:text-9xl'>☻</span>
+                        Moin,<span className='text-[#fecd45] text-6xl md:text-9xl'>☻</span>
                     </h1>
                     <span>ich bin Haui und mach Internet. Wenn du willst, dass ich dir deins mache, melde dich gern</span>
                     <a href="#contact">
