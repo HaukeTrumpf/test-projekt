@@ -73,7 +73,7 @@ function ContactForm() {
 
 function Contact() {
   return (
-    <div className='bg-[#2568fb] flex justify-center items-center h-screen'>
+    <div className='z-10 relative bg-[#2568fb] flex justify-center items-center h-screen'>
       <ContactForm /> 
     </div>
   );
